@@ -1,0 +1,73 @@
+body {
+    font-family: sans-serif;
+    background: #f7f7f7;
+    padding: 2rem;
+    max-width: 800px;
+    margin: auto;
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    background: #fff;
+    padding: 2rem;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
+    border-radius: 8px;
+}
+
+h1 {
+    text-align: center;
+    color: #333;
+}
+
+.project {
+    background: #fff;
+    margin: 1rem 0;
+    padding: 1rem;
+    border-left: 5px solid #007acc;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+}
+
+.project h2 {
+    margin: 0 0 0.5rem;
+}
+
+.project p {
+    margin: 0.5rem 0;
+}
+
+.project a {
+    display: inline-block;
+    margin-top: 0.5rem;
+    color: #007acc;
+    text-decoration: none;
+}
+
+.project a:hover {
+    text-decoration: underline;
+}
+
+.simple-test {
+    background: #f9f9f9;
+    padding: 1rem;
+    border-radius: 5px;
+    margin-top: 1rem;
+    text-align: center;
+}
+
+.test-button {
+    padding: 10px 20px;
+    margin: 10px auto 20px;
+    display: block;
+    cursor: pointer;
+    text-transform: uppercase;
+    font-size: 12px;
+    font-weight: bold;
+    letter-spacing: 0.5px;
+}
+
+.test-result {
+    margin-top: 20px;
+    font-weight: 700;
+    color: #333;
+}
