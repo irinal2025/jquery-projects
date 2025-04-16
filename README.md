@@ -7,7 +7,7 @@ Each mini project demonstrates dynamic UI features, animation effects, and user 
 
 ...
 
-## 🛠 Technologies
+## Technologies
 
 - HTML, CSS
 - JavaScript (jQuery)
