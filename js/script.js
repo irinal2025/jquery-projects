@@ -5,21 +5,20 @@ $(document).ready(function () {
   });
 });
 
-// Vanilla JavaScript for the menu toggle functionality
-document.addEventListener('DOMContentLoaded', () => {
 
+// Theme switcher and menu toggle functionality
+function initThemeSwitcher() {
   // Menu toggle
   const menuToggle = document.getElementById('menu-toggle');
   const menu = document.getElementById('menu');
-  
+
   if (menuToggle && menu) {
     menuToggle.addEventListener('click', () => {
       menu.classList.toggle('active');
     });
   }
 
-
-  // Theme toggle
+  // Theme switcher
   const toggle = document.getElementById('theme-switch');
   if (toggle) {
     toggle.addEventListener('change', () => {
@@ -27,12 +26,9 @@ document.addEventListener('DOMContentLoaded', () => {
       localStorage.setItem('theme', toggle.checked ? 'dark' : 'light');
     });
 
-    // Dark Theme Initialization
     if (localStorage.getItem('theme') === 'dark') {
       document.body.classList.add('dark-theme');
       toggle.checked = true;
     }
   }
-
-});
-
+}
