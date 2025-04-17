@@ -41,25 +41,48 @@
 
 
     <link rel="stylesheet" href="css/styles.css" />
+    <link rel="stylesheet" href="css/frontpage.css" />
 
 </head>
 
 <body>
+    <div id="header"></div>
 
-    <div class="container">
-        <h1>jQuery Projects Collection</h1>
+    <div class="content">
+        <div class="container">
+            <h1>jQuery Projects Collection</h1>
+            <p>Explore a collection of interactive front-end projects built with jQuery. Each project showcases unique
+                features and effects, providing a hands-on experience with jQuery's capabilities.</p>
+            <!--p>Click on the project cards below to view live demos and source code.</p-->
 
-        <div class="simple-test">
-            <p>Click the button below to see the magic</p>
+            <div class="simple-test">
+                <p>Click the button below to see the magic</p>
+                <button id="testButton" class="test-button">Click me</button>
+                <div id="testResult" class="test-result"></div>
+            </div>
 
-            <button id="testButton" class="test-button">Click me</button>
-            <div id="testResult" class="test-result"></div>
+            <!--div class="project-grid">
+                <a href="/jquery-projects/todo-list/index.html" class="project-card">
+                    <h2>To-Do List</h2>
+                    <p>Filter, animate and save tasks using jQuery & localStorage</p>
+                </a>
+            </div-->
+
         </div>
 
+        <footer>
+            <p>&copy; 2025 Irina L. All rights reserved. • <a href="https://github.com/irinal2025">GitHub</a></p>
+        </footer>
     </div>
+
+    <script>
+        fetch('header.html')
+            .then(response => response.text())
+            .then(data => document.getElementById('header').innerHTML = data);
+    </script>
 
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="js/script.js"></script>
-</body>
 
+</body>
 </html>
