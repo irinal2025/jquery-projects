@@ -16,15 +16,17 @@ document.addEventListener('DOMContentLoaded', () => {
 });
 
 const toggle = document.getElementById('theme-switch');
-toggle.addEventListener('change', () => {
-  document.body.classList.toggle('dark-theme', toggle.checked);
-  localStorage.setItem('theme', toggle.checked ? 'dark' : 'light');
-});
+if (toggle) {
+  toggle.addEventListener('change', () => {
+    document.body.classList.toggle('dark-theme', toggle.checked);
+    localStorage.setItem('theme', toggle.checked ? 'dark' : 'light');
+  });
 
-// Dark Theme Initialization
-window.addEventListener('DOMContentLoaded', () => {
-  if (localStorage.getItem('theme') === 'dark') {
-    document.body.classList.add('dark-theme');
-    toggle.checked = true;
-  }
-});
+  // Dark Theme Initialization
+  window.addEventListener('DOMContentLoaded', () => {
+    if (localStorage.getItem('theme') === 'dark') {
+      document.body.classList.add('dark-theme');
+      toggle.checked = true;
+    }
+  });
+}
