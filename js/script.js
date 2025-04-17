@@ -11,10 +11,12 @@ document.addEventListener('DOMContentLoaded', () => {
   // Menu toggle
   const menuToggle = document.getElementById('menu-toggle');
   const menu = document.getElementById('menu');
-
-  menuToggle.addEventListener('click', () => {
-    menu.classList.toggle('active');
-  });
+  
+  if (menuToggle && menu) {
+    menuToggle.addEventListener('click', () => {
+      menu.classList.toggle('active');
+    });
+  }
 
 
   // Theme toggle
