@@ -89,6 +89,7 @@ body {
 
   .menu.active {
     display: flex;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
   }
   .theme-toggle {
     margin-right: 20px;
@@ -171,6 +172,34 @@ p {
   line-height: 48px;
   font-weight: 700;
   letter-spacing: 0.5px;
+
+  background-color: #4a90e2;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+  transition: all 0.3s ease;
+}
+
+.test-button:hover {
+  background-color: #357ab8;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+  transform: translateY(-2px);
+}
+
+.test-button:active {
+  transform: translateY(1px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.test-button:disabled {
+  background-color: #e0e0e0;
+  color: #aaa;
+  border: none;
+  cursor: not-allowed;
+  box-shadow: none;
+  transform: none;
+  opacity: 0.6;
 }
 
 .test-result {
@@ -252,4 +281,26 @@ body.dark-theme .test-button {
   background-color: #121212;
   color: #fff;
   border: 1px solid #444;
+}
+
+body.dark-theme .test-button {
+  background-color: #1f1f1f;
+  color: #fff;
+  border: 1px solid #444;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.6);
+}
+
+body.dark-theme .test-button:hover {
+  background-color: #2a2a2a;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.7);
+}
+
+body.dark-theme .test-button:active {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+}
+
+body.dark-theme .test-button:disabled {
+  background-color: #2c2c2c;
+  color: #777;
+  border-color: #333;
 }
